@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets of Our Solar System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0b0f19;
+            color: #f0f4f8;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #4cc9f0;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p {
+            color: #a5a5a5;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .table-container {
+            width: 100%;
+            max-width: 1000px;
+            overflow-x: auto;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #161b26;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1f2636;
+            color: #4cc9f0;
+            padding: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #2d3748;
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #232a38;
+            font-size: 0.95rem;
+        }
+
+        /* Highlight planet names */
+        td:first-child {
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        /* Alternating row colors */
+        tr:nth-child(even) {
+            background-color: #1a202c;
+        }
+
+        /* Hover effect */
+        tr:hover {
+            background-color: #242c3d;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Right-align numeric columns for better readability */
+        .num {
+            text-align: right;
+        }
+        th.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Planets of Our Solar System</h1>
+    <p>A quick reference guide to the eight major planets orbiting our Sun.</p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Planet</th>
+                    <th>Type</th>
+                    <th class="num">Distance from Sun (AU)</th>
+                    <th class="num">Mass (Earths)</th>
+                    <th class="num">Moons</th>
+                    <th>Has Rings?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mercury</td>
+                    <td>Terrestrial</td>
+                    <td class="num">0.39</td>
+                    <td class="num">0.055</td>
+                    <td class="num">0</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Venus</td>
+                    <td>Terrestrial</td>
+                    <td class="num">0.72</td>
+                    <td class="num">0.815</td>
+                    <td class="num">0</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Earth</td>
+                    <td>Terrestrial</td>
+                    <td class="num">1.00</td>
+                    <td class="num">1.000</td>
+                    <td class="num">1</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>Terrestrial</td>
+                    <td class="num">1.52</td>
+                    <td class="num">0.107</td>
+                    <td class="num">2</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Jupiter</td>
+                    <td>Gas Giant</td>
+                    <td class="num">5.20</td>
+                    <td class="num">317.8</td>
+                    <td class="num">95</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Saturn</td>
+                    <td>Gas Giant</td>
+                    <td class="num">9.58</td>
+                    <td class="num">95.2</td>
+                    <td class="num">146</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Uranus</td>
+                    <td>Ice Giant</td>
+                    <td class="num">19.22</td>
+                    <td class="num">14.5</td>
+                    <td class="num">28</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Neptune</td>
+                    <td>Ice Giant</td>
+                    <td class="num">30.05</td>
+                    <td class="num">17.1</td>
+                    <td class="num">16</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
